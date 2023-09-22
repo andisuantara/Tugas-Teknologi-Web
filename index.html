@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Kalkulator</title>
+  </head>
+  <body>
+    <div>
+      <div class="container-tiga">
+        <table class="dataDiri" cellspacing="20">
+          <tr>
+            <td>Nama</td>
+            <td>:</td>
+            <td>I Ketut Andi Suantara</td>
+          </tr>
+          <tr>
+            <td>Nim</td>
+            <td>:</td>
+            <td>2215101036</td>
+          </tr>
+          <tr>
+            <td>Kelas</td>
+            <td>:</td>
+            <td>3(A)</td>
+          </tr>
+          <tr>
+            <td>Prodi</td>
+            <td>:</td>
+            <td>Ilmu Komputer</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="container">
+      <header>Kalkulator Deret Fibbonaci</header>
+      <div class="line"></div>
+      <table cellspacing="20">
+        <tbody>
+          <tr>
+            <td>
+              <label for="fibonacci-input">Masukan Jumlah Deret:</label><br />
+              <textarea id="fibonacci-input" cols="31" rows="2"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="hasilFibonacci">Hasil deret:</label><br />
+              <textarea readonly id="hasilFibonacci" cols="31" rows="2"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button type="button" id="hitung-Button">Hitung</button>
+              <button type="button" id="clear-button">Clear</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- untuk mencari volume -->
+    <div class="container-dua">
+      <header>Kalkulator Volume Bangun Ruang</header>
+      <div class="line"></div>
+      <div class="form">
+        <label for="pilihBidang">Pilih Bangun Ruang:</label>
+
+        <select id="pilihBidang">
+          <option value="kubus">Kubus</option>
+          <option value="tabung">Tabung</option>
+          <option value="bola">Bola</option>
+        </select>
+
+        <div id="formInput">
+          <div id="kubusInput" class="formInput">
+            <label for="pnjSisiKubus">Panjang Sisi:</label><br />
+            <textarea id="pnjSisiKubus" cols="31" rows="2"></textarea>
+          </div>
+
+          <div id="tabungInput" class="formInput">
+            <label for="jariTabung">Jari-Jari:</label><br />
+            <textarea id="jariTabung" cols="31" rows="2"></textarea><br />
+          
+            <label for="tinggiTabung">Tinggi:</label><br />
+            <textarea id="tinggiTabung" cols="31" rows="2"></textarea>
+          </div>
+
+          <div id="bolaInput" class="formInput">
+            <label for="jariBola">Jari-Jari:</label><br />
+            <textarea id="jariBola" cols="31" rows="2"></textarea>
+          </div>
+        </div>
+
+        <div id="result">
+          <label for="hasilVolume">Hasil:</label><br />
+          <textarea readonly id="hasilVolume" cols="31" rows="2"></textarea>
+        </div>
+
+        <div class="btn-ctnDua">
+          <button type="button" id="hitungButton">Hitung</button>
+          <button type="button" id="clearButton">Clear</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
